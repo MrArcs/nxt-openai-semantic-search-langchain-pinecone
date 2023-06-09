@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    height: 100vh;
+    height: 100svh;
+    background-color: #0e0f1e;
+    position: relative;
+    overflow: hidden;
+}
+
+.nebulosa-pink {
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    background-image: radial-gradient(
+        circle farthest-side,
+        rgba(243, 0, 174, 0.13),
+        rgba(142, 57, 197, 0)
+    );
+    border-radius: 100%;
+    position: absolute;
+    top: -3%;
+    bottom: auto;
+    left: -20%;
+    right: auto;
+}
+
+.nebulosa-pink-2 {
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    background-image: radial-gradient(
+        circle farthest-side,
+        rgba(243, 0, 174, 0.13),
+        rgba(142, 57, 197, 0)
+    );
+    border-radius: 100%;
+    position: absolute;
+    top: -3%;
+    bottom: auto;
+    left: auto;
+    right: -20%;
+}
+
+.nebulosa-1 {
+    z-index: -1;
+    width: 1000px;
+    height: 1000px;
+    background-image: radial-gradient(
+        circle farthest-side,
+        rgba(123, 97, 255, 0.29),
+        rgba(142, 57, 197, 0)
+    );
+    border-radius: 100%;
+    position: absolute;
+    top: 14%;
+    bottom: auto;
+    left: -35%;
+    right: auto;
+}
+
+.nebulosa-2 {
+    z-index: -1;
+    width: 1000px;
+    height: 1000px;
+    background-image: radial-gradient(
+        circle farthest-side,
+        rgba(123, 97, 255, 0.29),
+        rgba(142, 57, 197, 0)
+    );
+    border-radius: 100%;
+    position: absolute;
+    top: 25%;
+    bottom: 0%;
+    left: auto;
+    right: -35%;
+}
+.nebulosa-3 {
+    z-index: -1;
+    width: 1000px;
+    height: 1000px;
+    background-image: radial-gradient(
+        circle farthest-side,
+        rgba(123, 97, 255, 0.29),
+        rgba(142, 57, 197, 0)
+    );
+    border-radius: 100%;
+    position: absolute;
+    top: 52%;
+    bottom: 0%;
+    left: auto;
+    right: -35%;
+}
+.buttons {
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all;
+    transition: ease-in-out;
+    transition-duration: 1000ms;
+}
+.buttons:hover {
+    background-image: linear-gradient(to right, #f300ae, #8e39c5);
+    border-radius: 8px;
+}
+.buttons::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #fe00ae, #8e39c5) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+.bg-chrome {
+    background-image: url(/chrome.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
